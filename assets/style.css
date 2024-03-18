@@ -1,0 +1,411 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Background-background-100, #FAFDFF);
+    max-width: 100%;
+    margin: auto;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.op-9{
+    opacity: .9;
+}
+.flip-image{
+    transform: rotateY(0);
+}
+.btn-primary {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    border-radius: 8px;
+
+}
+
+/* .btn-primary:hover {
+    background-color : transparent;
+    border: 2px solid #F4CB5F;
+    position: relative;
+    transition: all 0.50s ease-in-out;
+    color: #042B52;
+    transition: 0.3s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+    
+} */
+
+
+.pricing-card-btn {
+    display: flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: var(--Primary-primary-500, #0236A6);
+    color: var(--Primary-primary-50, #E6EBF6);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    transition: .5s ease-in-out;
+}
+
+.pricing-card-btn:hover {
+    display: flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: var(--Secondary-secondary-500, #F4CB5F);
+    color: var(--Text-text-500, #042B52);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+
+
+
+.heading {
+    color: var(--Text-text-500, #042B52);
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.paragraph {
+    color: var(--Text-text-300, #57718B);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.trusted-brand-heading {
+    color: var(--Text-text-500, #042B52);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+
+.work-process-heading {
+    color: var(--Text-text-500, #042B52);
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.team-member-name {
+    color: var(--Text-text-500, #042B52);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    transition: .5s ease-in-out;
+
+}
+
+.team-member-position {
+    color: var(--Text-text-400, #365575);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.pricing-card {
+    border-radius: 8px;
+    background: var(--Base-White, #FFF);
+    box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    border: #FAFDFF solid 2px;
+    transition: .5s ease-in-out;
+
+}
+
+.pricing-card:hover {
+    animation-duration: 300ms;
+
+    background: var(--Primary-primary-500, #0236A6);
+
+    transform: scale(1.05);
+    object-fit: cover;
+
+}
+
+.pricing-card p,
+.pricing-card span,
+.pricing-card i,
+.pricing-card h2,
+.pricing-card h1 {
+    transition: .5s ease-in-out;
+}
+
+.pricing-card:hover p,
+.pricing-card:hover h1,
+.pricing-card:hover i,
+.pricing-card:hover h2 {
+    color: #FAFDFF;
+}
+
+.pricing-card:hover span {
+    color: #F4CB5F;
+}
+
+
+
+.plan-facilities {
+    color: var(--Text-text-400, #365575);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.blog-card {
+    border-radius: 8px;
+    background: var(--Base-White, #FFF);
+    box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    display: flex;
+    gap: 20px;
+    border: #FAFDFF solid 2px;
+
+}
+
+.blog-card:hover {
+    /* border: #042B52 solid 2px; */
+    animation-duration: 300ms;
+    transition: ease-in-out;
+    background: var(--Background-background-200, #F8FCFF);
+    transition: transform 1s;
+    transform: scale(1.05);
+    object-fit: cover;
+}
+
+
+.blog-card-heading-2 {
+    color: var(--Text-text-500, #042B52);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.blog-card-paragraph {
+    color: var(--Text-text-400, #365575);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+
+}
+
+
+.transparent-banner {
+    background: transparent !important;
+}
+
+.brand-logo {
+    z-index: 11;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+
+.project-slider-card .slick-next {
+    right: 150px;
+}
+
+.project-slider-card .slick-prev {
+    left: 150px;
+}
+
+
+.customers-review-card .slick-dots {
+    margin-bottom: -60px;
+}
+
+/* Banner CSS  */
+
+
+.main-header {
+    position: fixed;
+    transition: .3s linear;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+.main-header.sticky {
+    background: #fff;
+}
+
+.banner-section {
+    padding-top: 0px;
+    position: relative;
+}
+
+.banner-section::before {
+    content: '';
+    background: #0236A6;
+    width: 412px;
+    height: 450px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.service-card::before {
+    content: '';
+    background: #eee;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 16px;
+    z-index: -1;
+    transition: .3s ease;
+}
+
+/* .service-card:hover .service-icon{
+    filter: brightness(0) invert(1);
+} */
+.service-card:hover:before {
+    opacity: 0;
+}
+
+
+
+
+/* ------------------------------------ Responsive Design ------------------------------ */
+
+
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 640px) {
+    .main-header{
+        background: #FFF;
+        height: 84px;
+        overflow: hidden;
+        transition: .3s ease;
+    }
+    .main-header.menu-open{
+        height: 380px;
+    }
+    .menu-hambueger{
+        transition: .3s ease;
+    }
+    .main-header.menu-open .menu-hambueger{
+        background: #042b52;
+        color: #f4cb5f;
+    }
+    .flip-image{
+        transform: rotateY(180deg);
+    }
+    .heading {
+        font-size: 26px;
+        line-height: 28px;
+    }
+    .shadow-2xl{
+        box-shadow: none !important;
+    }
+    .paragraph {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .banner-section::before {
+        display: none;
+    }
+
+    .btn-primary {
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        border-radius: 8px;
+    }
+
+    .trusted-brand-heading {
+        color: var(--Text-text-500, #042B52);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    .blog-card {
+        border-radius: 8px;
+        background: var(--Base-White, #FFF);
+        box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.08);
+        padding: 12px;
+        display: flex;
+        gap: 10px;
+        border: #FAFDFF solid 2px;
+        flex-direction: column;
+    }
+
+    .blog-card-heading-2 {
+        color: var(--Text-text-500, #042B52);
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    
+}
+
+
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 48em) {}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 64em) {}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 80em) {}
+
+2
+/* ------------------------------------ Responsive Design ------------------------------ */
