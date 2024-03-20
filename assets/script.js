@@ -1,17 +1,47 @@
-$(document).ready(function () {
+$('.project-slider-card').slick({
+  arrows:true,
+  dots: true,
+  slidesToShow: 4,
+  infinite:true,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  slidesToScroll: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
 
-  $('.project-slider-card').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 3,
+$(document).ready(function () {
+  $('.customers-review-slider').slick({
+    dots: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: true,
     responsive: [
       {
         breakpoint: 768,
         settings: {
           arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       },
       {
@@ -19,29 +49,9 @@ $(document).ready(function () {
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
-});
-
-
-$(document).ready(function () {
-  $('.customers-review-card').slick({
-    dots: true,
-    autoplay: true,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          slidesToShow: 1
+          centerPadding: '20px',
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       }
     ]

@@ -254,6 +254,7 @@ body {
 
 .project-slider-card .slick-prev {
     left: 150px;
+    z-index: 1;
 }
 
 
@@ -305,11 +306,74 @@ body {
     transition: .3s ease;
 }
 
-/* .service-card:hover .service-icon{
-    filter: brightness(0) invert(1);
-} */
+
 .service-card:hover:before {
     opacity: 0;
+}
+
+
+.customers-review-slider .slick-dots li button:before{
+    font-size: 10px ;
+    color: #0236A6;
+}
+
+.customers-review-slider .slick-prev{
+    left: unset;
+    right: 90px;
+    top: -100px;
+}
+
+.customers-review-slider .slick-next{
+    top: -100px;
+    right: 40px;
+}
+
+.project-slider-card, .slick-prev:before{
+    border: 2px solid #0236A6;
+    background-color: #0236A6;
+    border-radius: 6px;
+    font-size: 30px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f104";
+}
+.slick-prev:before{
+    padding: 6px 12px;
+}
+
+.customers-review-slider .slick-next:before , .customers-review-slider .slick-prev:before{
+    border: 2px solid #0236A6;
+    border-radius: 6px;
+    background-color: #0236A6;
+    font-size: 30px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f104";
+    padding: 6px 12px;
+}
+.customers-review-slider .slick-next:before {
+    content: "\f105"
+}
+
+.project-slider-card .slick-next:before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f105";
+    padding: 6px 12px;
+}
+
+
+.project-slider-card .slick-next:before{
+    border: 2px solid #0236A6;
+    border-radius: 6px;
+    background-color: #0236A6;
+    font-size: 30px;
+}
+
+.project-slider-card .slick-dots li button:before{
+    font-size: 10px ;
+    color: #F4CB5F;
+    padding-top: 60px;
 }
 
 
@@ -393,8 +457,15 @@ body {
         font-weight: 500;
         line-height: 20px;
     }
+
+    .project-slider-card .slick-dots li button:before{
+        font-size: 6px ;
+        color: #F4CB5F;
+        padding-top: 20px;
+    }
     
 }
+
 
 
 
@@ -407,5 +478,5 @@ body {
 /* Largest devices such as desktops (1280px and up) */
 @media only screen and (min-width: 80em) {}
 
-2
+
 /* ------------------------------------ Responsive Design ------------------------------ */
